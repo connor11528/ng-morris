@@ -1,0 +1,24 @@
+{
+  "name": "ng-morris",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jasonshark/ngMorris",
+  "authors": [
+    "Connor James Leech <connorleech@gmail.com>"
+  ],
+  "description": "simple directives for adding pretty bar, line and donut charts to your angular projects using morrisjs",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "morris",
+    "morrisjs",
+    "charts",
+    "graph",
+    "directive",
+    "linechart"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.2.21",
+    "morrisjs": "~0.5.1"
+  }
+}

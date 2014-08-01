@@ -2,6 +2,7 @@
   "name": "ng-morris",
   "version": "0.0.1",
   "homepage": "https://github.com/jasonshark/ngMorris",
+  "main": "src/ngMorris.js",
   "authors": [
     "Connor James Leech <connorleech@gmail.com>"
   ],

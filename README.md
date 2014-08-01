@@ -10,6 +10,10 @@ The options passed to each are listed in the examples below. Attach the data to 
 index.html:
 `<script src='bower_components/ngMorris/src/ngMorris.js'></script>`
 
+Then include it as a dependecy:
+
+`angular.module('myApp', ['ngMorris'])`
+
 Line chart example:
 
 ```

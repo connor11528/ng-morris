@@ -1,5 +1,5 @@
 {
-  "name": "ngMorris",
+  "name": "ngmorris",
   "version": "0.0.1",
   "homepage": "https://github.com/jasonshark/ngMorris",
   "main": "src/ngMorris.js",
@@ -16,6 +16,15 @@
     "graph",
     "directive",
     "linechart"
+  ],
+  "ignore": [
+    "./index.html",
+    "./gulpfile.js",
+    "./package.json",
+    ".gitignore",
+    "bower_components/",
+    "node_modules/",
+    "scripts/"
   ],
   "license": "MIT",
   "dependencies": {

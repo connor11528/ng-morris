@@ -4,15 +4,16 @@ var gulp = require('gulp'),
 	inject = require("gulp-inject");
 
 // inject bower packages into index.html
-// gulp.task('bower-install', function(){
-//   gulp.src('./index.html')
-//   	.pipe(inject(gulp.src(bowerFiles(), { read: false }, { name: 'bower' })))
-// })
+gulp.task('bower-install', function(){
+  gulp.src('./index.html')
+  	.pipe(inject(gulp.src(bowerFiles(), {read: false}), {name: 'bower'}))
+  	.pipe(gulp.dest('./'))
+})
 
 // connect web server
 gulp.task('connect', function(){
 	connect.server({
-		root: '.',
+		root: [__dirname],
 		livereload: true
 	})
 })
@@ -37,6 +38,7 @@ gulp.task('watch', function(){
 
 // register default tasks
 gulp.task('default', [
+	'bower-install',
 	'connect',
 	'watch'
 ])

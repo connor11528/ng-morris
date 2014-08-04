@@ -8,4 +8,3 @@ angular.module('ngMorrisExample')
 .controller('MainCtrl', function(){
 
 })
-

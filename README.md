@@ -39,3 +39,19 @@ Donut chart example:
 <div donut-chart
 	donut-data='percentages'></div>
 ```
+
+## Data format
+
+# Line
+
+```
+line-data: [
+	{ xlabel: 'str', yvalue1: num, yvalue2: num },
+	{ xlabel: 'str', yvalue1: num, yvalue2: num }
+	// etc
+]
+
+line-xkey: 'xlabel'
+line-ykeys: ['yvalue1', 'yvalue2']
+line-labels: ['Value 1', 'Value 2']
+```

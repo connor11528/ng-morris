@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('ngMorrisExample', [
-	'ngMorris'
+var app = angular.module('ngMorrisExample', [
+	'ngMorris',
+	'ui.slider'
 ])
 
-angular.module('ngMorrisExample')
-.controller('MainCtrl', function(){
-
+app.controller('MainCtrl', function($scope){
+	$scope.demoVals = { sliderExample3: 14 };
 })

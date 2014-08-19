@@ -13,12 +13,24 @@
     <link href='bower_components/morrisjs/morris.css'>
 
 	  <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/bower_components/morrisjs/morris.css">
     <!-- endinject -->
 
   </head>
   <body ng-app='ngMorrisExample'>
-	<div ng-controller='MainCtrl'>
+  
+  <h2>Getting started</h2>
+  Install the directive:
+  <pre>bower install ngmorris --save</pre>
+  
+  Include as dependency:
+  <pre>angular.module('myApp', ['ngMorris'])</pre>
+
+  <div ng-controller='MainCtrl'>
+    <strong>Slider - start value 14</strong>
+    <div ui-slider min="0" max="20" ng-model="demoVals.sliderExample3"></div>
+    <input type="text" ng-model="demoVals.sliderExample3" />
    <div bar-chart></div>
   </div>
 
@@ -27,7 +39,10 @@
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/raphael/raphael.js"></script>
   <script src="/bower_components/mocha/mocha.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
   <script src="/bower_components/morrisjs/morris.js"></script>
+  <script src="/bower_components/angular-ui-slider/src/slider.js"></script>
   <!-- endinject -->
 
 

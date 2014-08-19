@@ -29,6 +29,11 @@
   "license": "MIT",
   "dependencies": {
     "angular": "~1.2.21",
-    "morrisjs": "~0.5.1"
+    "morrisjs": "~0.5.1",
+    "bootstrap": "~3.2.0",
+    "angular-ui-slider": "~0.0.2"
+  },
+  "resolutions": {
+    "angular": "~1.2.21"
   }
 }

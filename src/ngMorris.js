@@ -50,20 +50,22 @@ angular.module('ngMorris', [])
 		restrict: 'A',
 		scope: {
 			lineData: '=',
-			lineXkey: '@',
-			lineYkeys: '@',
-			lineLabels: '@'
+			lineXkey: '=',
+			lineYkeys: '=',
+			lineLabels: '=',
+			parseTime: '=?'	// optional: http://stackoverflow.com/questions/18784520/angular-directive-with-default-options
 		},
 		link: function (scope, elem, attrs){
 			scope.$watch('lineData', function(){
 
 				if(scope.lineData){					
 					new Morris.Line({
+						parseTime: scope.parseTime || false,
 						element: elem,
 						data: scope.lineData,
 						xkey: scope.lineXkey,
-						ykeys: JSON.parse(scope.lineYkeys),
-						labels: JSON.parse(scope.lineLabels)
+						ykeys: scope.lineYkeys,
+						labels: scope.lineLabels
 					})
 				}
 			})

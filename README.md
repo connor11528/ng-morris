@@ -1,6 +1,8 @@
 ngMorris
 ========
 
+America obesity data: http://fasinfat.org/adult-obesity/
+
 directives: `bar-chart`, `line-chart`, `donut-chart`
 
 The options passed to each are listed in the examples below. Attach the data to your controllers scope and `ngMorris` will watch for changes

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=640">
 
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/morrisjs/morris.css">
     <!-- endinject -->
     
     <title>Ng-morris by jasonshark</title>
@@ -14,12 +16,24 @@
 
     <div ng-controller='MainCtrl'>
 
+      <div line-chart 
+        line-data='lineChart.data' 
+        line-xkey='lineChart.xkey' 
+        line-ykeys='lineChart.ykeys'
+        line-labels='lineChart.labels'></div>
+
     </div>
     
 
     <!-- bower:js -->
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/raphael/raphael.js"></script>
+    <script src="bower_components/mocha/mocha.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/morrisjs/morris.js"></script>
     <!-- endinject -->
 
     <script src='src/ngMorris.js'></script>

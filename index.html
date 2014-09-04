@@ -14,15 +14,7 @@
   </head>
   <body ng-app='ngMorrisExample'>
 
-    <div ng-controller='MainCtrl'>
-
-      <div line-chart 
-        line-data='lineChart.data' 
-        line-xkey='lineChart.xkey' 
-        line-ykeys='lineChart.ykeys'
-        line-labels='lineChart.labels'></div>
-
-    </div>
+    <div ui-view=''></div>
     
 
     <!-- bower:js -->
@@ -32,6 +24,7 @@
     <script src="bower_components/raphael/raphael.js"></script>
     <script src="bower_components/mocha/mocha.js"></script>
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/morrisjs/morris.js"></script>
     <!-- endinject -->

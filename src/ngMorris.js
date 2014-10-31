@@ -52,21 +52,33 @@ angular.module('ngMorris', [])
 			lineData: '=',
 			lineXkey: '@',
 			lineYkeys: '@',
-			lineLabels: '@'
+			lineLabels: '@',
+	        lineColors: '@'
 		},
 		link: function (scope, elem, attrs){
+			var colors,
+				morris;
+			if (scope.lineColors === void 0 || scope.lineColors === '') {
+				colors = null;
+			} else {
+				colors = JSON.parse(scope.lineColors);
+			}
 			scope.$watch('lineData', function(){
-
 				if(scope.lineData){					
-					new Morris.Line({
-						element: elem,
-						data: scope.lineData,
-						xkey: scope.lineXkey,
-						ykeys: JSON.parse(scope.lineYkeys),
-						labels: JSON.parse(scope.lineLabels)
-					})
+					if(!morris) {
+						morris = new Morris.Line({
+							element: elem,
+							data: scope.lineData,
+							xkey: scope.lineXkey,
+							ykeys: JSON.parse(scope.lineYkeys),
+							labels: JSON.parse(scope.lineLabels),
+							lineColors: colors || ['#0b62a4', '#7a92a3', '#4da74d', '#afd8f8', '#edc240', '#cb4b4b', '#9440ed']
+						});
+					} else {
+						morris.setData(scope.lineData);
+					}
 				}
-			})
+			});
 		}
 	}
-})
+});

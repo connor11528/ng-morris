@@ -21,7 +21,8 @@ Line chart example:
 	line-data='groupedByMonth' 
 	line-xkey='month' 
 	line-ykeys='["total"]'
-	line-labels='["Total violations"]'></div>
+	line-labels='["Total violations"]'
+    line-colors='["#31C0BE","#7a92a3"]'></div>
 ```
 
 Bar chart example:
@@ -54,4 +55,5 @@ line-data: [
 line-xkey: 'xlabel'
 line-ykeys: ['yvalue1', 'yvalue2']
 line-labels: ['Value 1', 'Value 2']
+line-colors: ['#31C0BE', '#7a92a3']
 ```

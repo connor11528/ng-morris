@@ -7,6 +7,7 @@ angular.module('ngMorris', [])
 		scope: {
 			x: '@barX',
 			y: '@barY',
+			labels: '@labels',
 			barData: '='
 		},
 		link: function(scope, elem, attrs){
@@ -18,7 +19,7 @@ angular.module('ngMorris', [])
 						data: scope.barData,
 						xkey: scope.x,
 						ykeys: JSON.parse(scope.y),
-						labels: ['Number of violations'],
+						labels: JSON.parse(scope.labels),
 						xLabelMargin: 2
 					})
 				}

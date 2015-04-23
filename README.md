@@ -31,6 +31,7 @@ Bar chart example:
 <div bar-chart 
 	bar-data='categories' 
 	bar-x='violation_category' 
+	labels='["violation categories","number of violations"]'
 	bar-y='["number_violations"]'></div>
 ```
 

@@ -1,6 +1,10 @@
 ngMorris
 ========
 
+This repo is NO LONGER MAINTAINED. I suggest you use [angular-morris-chart](https://github.com/stewones/angular-morris-chart) for your dynamic charting needs.
+
+### Documentation
+
 directives: `bar-chart`, `line-chart`, `donut-chart`
 
 The options passed to each are listed in the examples below. Attach the data to your controllers scope and `ngMorris` will watch for changes
